@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to My Account | American Express</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="assets/css/main.css"> 
+  </head>
+  <body>
+    <!-- Header section Start-->
+    <header class="header">
+      <div class="container header__content">
+        <div class="d-flex align-items-center">
+          <!-- Menu Btn Start -->
+          <div class="header-menuBtn">
+            <div class="icon">
+              <div class="icon-bar"></div>
+              <div class="icon-bar"></div>
+              <div class="icon-bar"></div>
+            </div>
+            <span class="text ps-2 d-sm-block d-none">Menu</span>
+          </div>
+          <!-- Menu Btn  End -->
+
+          <!-- Logo  -->
+          <a href="#" class="header-logo">
+            <img src="assets/images/logo.svg" alt="brand-logo" />
+            <span class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="28"
+                viewBox="0 0 100 28"
+              >
+                <path fill="none" d="M0 0h100v28H0z" />
+                <path
+                  d="M96.1 20.3h-2.9c-.6 0-1.1-.4-1.1-.9 0-.6.5-.9 1.1-.9h5.3l1.2-2.7h-6.5c-2.7 0-4.2 1.6-4.2 3.7 0 2.2 1.5 3.5 3.8 3.5h2.9c.6 0 1.1.4 1.1.9s-.4.9-1.1.9h-6.4v2.7h6.4c2.7 0 4.2-1.6 4.2-3.8s-1.4-3.4-3.8-3.4m-11.7 0h-2.9c-.6 0-1.1-.4-1.1-.9 0-.6.5-.9 1.1-.9h5.3l1.2-2.7h-6.5c-2.7 0-4.2 1.6-4.2 3.7 0 2.2 1.5 3.5 3.8 3.5H84c.6 0 1.1.4 1.1.9s-.4.9-1.1.9h-6.4v2.7H84c2.7 0 4.2-1.6 4.2-3.8.1-2.2-1.3-3.4-3.8-3.4m-18.5 7.3h10v-2.7h-6.8V23h6.7v-2.7h-6.7v-1.9h6.8v-2.7h-10zm-6.2-6.8h-3.3v-2.4h3.3c.9 0 1.4.6 1.4 1.2 0 .7-.5 1.2-1.4 1.2m4.6-1.3c0-2.3-1.6-3.8-4.2-3.8h-6.9v11.9h3.2v-4.1h1.2l3.6 4.1H65l-3.9-4.3c2-.5 3.2-1.9 3.2-3.8M47.2 21h-3.4v-2.6h3.4c.9 0 1.4.6 1.4 1.3 0 .7-.4 1.3-1.4 1.3m.4-5.3h-6.9v11.9h3.2v-3.9h3.7c2.7 0 4.3-1.7 4.3-4-.1-2.4-1.7-4-4.3-4m-7.5 0H36l-3 3.6-3.1-3.6h-4.2l5.3 5.9-5.4 6h4.1l3.2-3.8 3.2 3.8h4.2l-5.4-6.1zM15.2 27.6h10v-2.7h-6.9V23H25v-2.7h-6.7v-1.9h6.9v-2.7h-10zM94.9 7.7L90 .5h-4v11.8h3.2V4.8l5 7.5H98V.5h-3.1zm-18.4-.4l1.7-4 1.7 4h-3.4zM76.1.5l-5.2 11.9h3.5l1-2.4h5.5l1 2.4h3.6L80.2.5h-4.1zm-10.4 6v-.2c0-1.8 1-3 3-3h3.5V.4h-3.8c-3.9 0-5.9 2.5-5.9 5.8v.2c0 3.7 2.3 5.8 5.8 5.8h1.1l1.3-2.7h-1.9c-1.9.1-3.1-1-3.1-3m-8-6v11.8h3.2V.5zm-6.2 5h-3.3V3.1h3.3c.9 0 1.4.6 1.4 1.2 0 .7-.5 1.2-1.4 1.2m4.6-1.2C56.1 2 54.5.5 51.9.5H45v11.9h3.2V8.2h1.2l3.6 4.1h3.9l-4-4.3c2-.4 3.2-1.9 3.2-3.7m-23.2 8h10V9.6h-6.8V7.7h6.6V5h-6.6V3.1h6.8V.5h-10zM22.8 7.9L20.1.5h-4.9v11.8h3.1V3.8l3.1 8.5h2.8l3.1-8.5v8.5h3.2V.5h-5zM5.6 7.3l1.7-4 1.7 4H5.6zM5.2.5L0 12.3h3.5l1-2.4H10l1 2.4h3.6L9.3.5H5.2z"
+                  fill="currentColor"
+                />
+              </svg>
+            </span>
+          </a>
+          <!-- Menu -->
+          <ul class="header-menu">
+            <li>
+              <a href="#" class="header-menu__link">My Account</a>
+            </li>
+            <li><a href="#" class="header-menu__link">Cards</a></li>
+            <li><a href="#" class="header-menu__link">Saving & Loans</a></li>
+            <li><a href="#" class="header-menu__link">Travel</a></li>
+            <li><a href="#" class="header-menu__link">Rewards</a></li>
+            <li><a href="#" class="header-menu__link">Business</a></li>
+          </ul>
+        </div>
+        <!-- Actions -->
+        <ul class="header-actions">
+          <li>
+            <a href="#" class="header-actions__link search-btn">
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="22px"
+                height="22px"
+              >
+                <path
+                  d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a href="#" class="header-actions__link">Help</a></li>
+          <li><a href="#" class="header-actions__link button">Log in</a></li>
+        </ul>
+      </div>
+      <div class="header__content-bottom active">
+        <div class="container">
+          <div class="header-searchbox">
+            <form action="#" class="w-100">
+              <input type="text" placeholder="Enter a keyword or topic" />
+              <button class="icon" type="submit">
+                <svg
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 30 30"
+                  width="30px"
+                  height="30px"
+                >
+                  <path
+                    d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+          <div class="header-dropdown">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                  <ul class="header-dropdown__menu">
+                    <li>
+                      <h2 class="header-dropdown__menu-title">Card Accounts</h2>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Create Your online Account</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Account Home</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        Confirm Your Card
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        Statements & Activity</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Account Service</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Card benefits</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <ul class="header-dropdown__menu">
+                    <li>
+                      <h2 class="header-dropdown__menu-title">
+                        BUSINESS ACCOUNTS
+                      </h2>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Small Business</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Merchant Home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        American Express @Work
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <ul class="header-dropdown__menu">
+                    <li>
+                      <h2 class="header-dropdown__menu-title">Other ACCOUNTS</h2>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Savings Accounts</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Membership Rewaqrds Point Summary
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        BLueBird Alternative to banking
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        International Payments for Businesses
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                  <ul class="header-dropdown__menu">
+                    <li>
+                      <h2 class="header-dropdown__menu-title">
+                        Credit Tools and support
+                      </h2>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Free Credit Score & Report</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link"
+                        >Set Your Credit Score Goals
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        Credit Secure
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        Forget user Id or Password ?
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        Security Center
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="header-dropdown__menu-link">
+                        Download the amex Mobile app
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="header-country">
+                  <h6>
+                    <img src="assets/images/icons/flag-us.svg" alt="" class="icon" />
+                    United States
+                  </h6>
+                  <a href="#">Change Country</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header section End-->
+
+    <div class="mobile-menu">
+      <div class="container">
+        <div class="mobile-menu__searchbox">
+          <form action="#" class="w-100">
+            <input type="text" />
+            <button class="icon" type="submit">
+              <svg
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 30 30"
+                width="30px"
+                height="30px"
+              >
+                <path
+                  d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+        <ul class="menu">
+          <li>
+            <a href="#"
+              ><span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-user"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </span>
+              My Account
+            </a>
+            <div class="menu-dropdown">
+              <ul class="menu">
+                <li>
+                  <h2 class="menu-title">Card Accounts</h2>
+                </li>
+                <li><a href="#">Create Your Online account</a></li>
+                <li><a href="#">Account Home</a></li>
+                <li><a href="#">Confirm Your Card</a></li>
+                <li><a href="#">Statements & activity</a></li>
+                <li><a href="#">Account Services</a></li>
+                <li><a href="#">Card Benefits</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-credit-card"
+                >
+                  <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                  <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+              </span>
+              Cards
+            </a>
+            <div class="menu-dropdown">
+              <ul class="menu">
+                <li>
+                  <h2 class="menu-title">Card Accounts</h2>
+                </li>
+                <li><a href="#">Create Your Online account</a></li>
+                <li><a href="#">Account Home</a></li>
+                <li><a href="#">Confirm Your Card</a></li>
+                <li><a href="#">Statements & activity</a></li>
+                <li><a href="#">Account Services</a></li>
+                <li><a href="#">Card Benefits</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-home"
+                >
+                  <path
+                    d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+                  ></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </span>
+              Saving & Loans
+            </a>
+            <div class="menu-dropdown">
+              <ul class="menu">
+                <li>
+                  <h2 class="menu-title">Card Accounts</h2>
+                </li>
+                <li><a href="#">Create Your Online account</a></li>
+                <li><a href="#">Account Home</a></li>
+                <li><a href="#">Confirm Your Card</a></li>
+                <li><a href="#">Statements & activity</a></li>
+                <li><a href="#">Account Services</a></li>
+                <li><a href="#">Card Benefits</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-send"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </span>
+              Travel</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-star"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  ></polygon>
+                </svg> </span
+              >Rewards</a
+            >
+            <div class="menu-dropdown">
+              <ul class="menu">
+                <li>
+                  <h2 class="menu-title">Card Accounts</h2>
+                </li>
+                <li><a href="#">Create Your Online account</a></li>
+                <li><a href="#">Account Home</a></li>
+                <li><a href="#">Confirm Your Card</a></li>
+                <li><a href="#">Statements & activity</a></li>
+                <li><a href="#">Account Services</a></li>
+                <li><a href="#">Card Benefits</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              ><span class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-briefcase"
+                >
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </span>
+              Business</a
+            >
+            <div class="menu-dropdown">
+              <ul class="menu">
+                <li>
+                  <h2 class="menu-title">Card Accounts</h2>
+                </li>
+                <li><a href="#">Create Your Online account</a></li>
+                <li><a href="#">Account Home</a></li>
+                <li><a href="#">Confirm Your Card</a></li>
+                <li><a href="#">Statements & activity</a></li>
+                <li><a href="#">Account Services</a></li>
+                <li><a href="#">Card Benefits</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main section Start-->
+    <main style="background-color: #ecedee; padding: 15px 0px">
+      <div class="container pt-5 mt-2">
+        <div class="row">
+          <div class="col-lg-4 offset-lg-2">
+            <!-- Login Form  -->
+            <div class="form">
+              <form action="#">
+                <h2 class="form-title">Log in to My account</h2>
+                <div class="form-input">
+                  <label for="user">User id</label>
+                  <input type="text" id="user"/>
+                </div>
+                <div class="form-input">
+                  <label for="user">Password</label>
+                  <input type="text" />
+                </div>
+                <div class="form-input">
+                  <label for="type"></label>
+                  <select name="type" id="type">
+                    <option value="01">Cards My Account</option>
+                    <option value="02">membership rewards</option>
+                    <option value="03">Marchant Account</option>
+                    <option value="04">America Express @work</option>
+                  </select>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" id="account" />
+                  <label for="account">Remember Me</label>
+                </div>
+                <button type="submit">Log in</button>
+              </form>
+              <!-- actions of Form  -->
+              <ul class="form-actions">
+                <li><a href="#">Forget user Id or Password ? </a></li>
+                <li><a href="#">Create New Online Account</a></li>
+                <li><a href="#">Confirm card received</a></li>
+                <li><a href="#">Visit Our security Center</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-3 mt-lg-0">
+            <div class="card-add">
+              <h2 class="card-add__title">From Our Partners</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Main section Start-->
+
+    <!-- Footer section Start-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row footer-top">
+          <div class="col-lg-3 col-sm-6">
+            <ul class="footer-menu">
+              <li>
+                <h2 class="footer-menu__title">About</h2>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">About America Express</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Investor Relations</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Careers</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Site map</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Amex Mobile App</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <ul class="footer-menu">
+              <li>
+                <h2 class="footer-menu__title">Product & Services</h2>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Credit Cards</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Business Credit Cards</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Corporate Programs</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Prepaid Cards</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Savings Accounts & CDs</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Gift Cards</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <ul class="footer-menu">
+              <li>
+                <h2 class="footer-menu__title">LINKS YOU MAY LIKE</h2>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Membership Rewards</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link"
+                  >Free Credit Score & Report</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">CreditSecure</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Bluebird</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Accept Amex Cards</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Refer A Friend</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <ul class="footer-menu">
+              <li>
+                <h2 class="footer-menu__title">ADDITIONAL INFORMATION</h2>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link"
+                  >Credit Intel – Financial Education Center</a
+                >
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Supplier Diversity</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Credit 101</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">Money Management 101</a>
+              </li>
+              <li>
+                <a href="#" class="footer-menu__link">US Newcomers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row footer-bottom">
+          <div class="footer-bottom__one">
+            <div class="footer-logo">
+              <img src="assets/images/logo-text.svg" alt="" />
+            </div>
+            <div class="footer-country">
+              <h6>
+                <img src="assets/images/icons/flag-us.svg" alt="" class="icon" />
+                United States
+              </h6>
+              <a href="#">Change Country</a>
+            </div>
+          </div>
+          <div class="footer-bottom__two">
+            <ul class="social-icons">
+              <li>
+                <a href="#"
+                  ><img src="assets/images/icons/facebook.png" alt="social-icons"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/images/icons/twitter.png" alt="social-icons"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/images/icons/instagram.png" alt="social-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/images/icons/linkedin.png" alt="social-icon"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="assets/images/icons/youtube.png" alt="social-icon"
+                /></a>
+              </li>
+            </ul>
+            <ul class="footer-terms">
+              <li>
+                <a href="#" class="footer-terms__link">Terms of Service</a>
+              </li>
+              <li><a href="#" class="footer-terms__link">Privacy Center</a></li>
+              <li><a href="#" class="footer-terms__link">AdChoices</a></li>
+              <li>
+                <a href="#" class="footer-terms__link">Security Center</a>
+              </li>
+              <li>
+                <a href="#" class="footer-terms__link">Card Agreements</a>
+              </li>
+              <li>
+                <a href="#" class="footer-terms__link"
+                  >Servicemember Benefits</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-bottom__three">
+            <p class="footer-copyright__text">
+              All users of our online services are subject to our Privacy
+              Statement and agree to be bound by the Terms of Service. Please
+              review.
+            </p>
+            <p class="footer-copyright__text">
+              &copy; 2021 American Express. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section Start-->
+
+    <!-- sidebar fixed tag -->
+    <button class="feedback-btn">
+        Give Feedback
+    </button>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

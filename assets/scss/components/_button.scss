@@ -1,0 +1,20 @@
+.feedback-btn {
+  background: rgb(0, 135, 103);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  position: relative;
+  // font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+  writing-mode: vertical-rl;
+  transform: rotate(-90deg);
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  position: fixed;
+  top: 50%;
+  right: -40px;
+  z-index: 99999;
+  font-size: 13px;
+  line-height: 22px;
+}

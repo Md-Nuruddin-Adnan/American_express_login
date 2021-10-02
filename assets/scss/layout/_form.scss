@@ -1,0 +1,118 @@
+.form {
+  padding: 20px;
+  background-color: #fff;
+  &-title {
+    color: #000;
+    // font-family: 'benton-regular';
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+  }
+
+  &-input {
+    margin-bottom: 20px;
+    label {
+      font-size: 13px;
+      line-height: 23px;
+      text-transform: uppercase;
+      // font-family: 'helvetica-medium';
+      margin-bottom: 5px;
+      display: block;
+    }
+    input,
+    select {
+      background-color: #f7f8f9;
+      border: 1px solid #c8c9c7;
+      border-radius: 0.25rem;
+      color: #000;
+      display: block;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      min-height: 3.125rem;
+      padding: 0 0.625rem;
+      transition: border-color 0.25s ease-out;
+      width: 100%;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        border: solid black;
+        border-width: 0 1.5px 1.5px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+      }
+
+      &:focus {
+        border-color: #006fcf;
+        outline: none;
+      }
+    }
+  }
+
+  &-check {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    input {
+      width: 22px;
+      height: 22px;
+      margin: 0;
+      &:focus {
+        outline: dashed 1px rgba(0, 0, 0, 0.3);
+        outline-offset: 3px;
+      }
+    }
+    label {
+      color: #000;
+      font-size: 15px;
+      line-height: 25px;
+      text-transform: capitalize;
+      margin-left: 6px;
+      // font-family: 'helvetica-regular';
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 12px 30px;
+    color: #fff;
+    background-color: #006fcf;
+    display: inline-block;
+    transition: all 0.3s linear;
+    border-radius: 4px;
+    &:hover {
+      background-color: #1068a5;
+    }
+  }
+
+  &-actions {
+    margin-top: 20px;
+    li {
+      &:nth-last-child(1) {
+        a {
+          margin-bottom: 0px;
+        }
+      }
+      a {
+        width: 100%;
+        color: #006fcf;
+        font-size: 15px;
+        line-height: 22px;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+        display: inline-block;
+        transition: all 0.3s linear;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

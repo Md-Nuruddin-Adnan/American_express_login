@@ -1,0 +1,14 @@
+.card {
+  &-add {
+    padding: 20px;
+    background-color: #fff;
+    &__title {
+      color: #000;
+      font-size: 13px;
+      line-height: 23px;
+      // font-family: 'helvetica-medium';
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}

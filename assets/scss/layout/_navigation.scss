@@ -1,0 +1,128 @@
+.mobile-menu {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  padding-bottom: 16px;
+  background-color: #fff;
+  z-index: 9999;
+  display: none;
+  &__searchbox {
+    padding: 15px 0px;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    input {
+      -webkit-appearance: none;
+      background-color: #f7f8f9;
+      border: 0.0625rem solid #c8c9c7;
+      border-radius: 0.25rem;
+      color: #333;
+      display: block;
+      font-size: 1rem;
+      line-height: 1.375rem;
+      min-height: 3.125rem;
+      padding: 0 0.625rem;
+      transition: border-color 0.25s ease-out;
+      width: inherit;
+      &:focus {
+        border-color: #0065cf;
+      }
+    }
+
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+      background-color: transparent;
+    }
+  }
+
+  .menu {
+    li {
+      position: relative;
+
+      a {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        line-height: 22px;
+        color: #006fcf;
+        width: 100%;
+        padding: 15px 0px;
+        position: relative;
+        padding-left: 40px;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          border: solid black;
+          border-width: 0px 1.8px 1.8px 0px;
+          display: inline-block;
+          padding: 3px;
+          transform: rotate(-45deg);
+          transition: all 0.3s linear;
+        }
+        .icon {
+          margin-right: 10px;
+        }
+      }
+
+      &.active {
+        .menu-dropdown {
+          display: block;
+        }
+        a {
+          &::after {
+            transform: rotate(45deg);
+          }
+        }
+      }
+
+      &:hover {
+        a {
+          background-color: #f7f8f9;
+        }
+      }
+
+      .menu-dropdown {
+        display: none;
+        padding-top: 14px;
+
+        .menu {
+          &-title {
+            color: #53565a;
+            font-size: 13px;
+            line-height: 23px;
+            text-transform: uppercase;
+            // font-family: 'helvetica-medium';
+            padding-left: 50px;
+            @include max(767px) {
+              padding-left: 16px;
+            }
+          }
+
+          li {
+            a {
+              padding: 10px 0px;
+              background-color: #fff;
+              padding-left: 50px;
+              @include max(767px) {
+                padding-left: 16px;
+              }
+              &:hover {
+                background-color: #f7f8f9;
+              }
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
